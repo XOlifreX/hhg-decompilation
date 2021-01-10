@@ -203061,833 +203061,876 @@ _0808f834:	.4byte 0x0200DD29
 	bx		lr
 
 .incbin "base.gba", 0x8F83A, 0x2
-_0808f83c:
-.incbin "base.gba", 0x8F83C, 0x4
-.incbin "base.gba", 0x8F840, 0x4
-.incbin "base.gba", 0x8F844, 0x4
-.incbin "base.gba", 0x8F848, 0x4
-.incbin "base.gba", 0x8F84C, 0x4
-.incbin "base.gba", 0x8F850, 0x4
+	thumb_func_end sub_0808f75c
+
+	arm_func_start sub_0808f83c
+sub_0808f83c:
+    stmdb	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+    rsb  	r4, r3, #0x20
+    ldr  	r7, [sp, #0x2c]
+    ldr  	r11, [sp, #0x28]
+    ldr  	r12, [sp, #0x24]
+    rsb  	r1, r1, #0x0
 _0808f854:
-.incbin "base.gba", 0x8F854, 0x4
-.incbin "base.gba", 0x8F858, 0x4
-.incbin "base.gba", 0x8F85C, 0x4
-.incbin "base.gba", 0x8F860, 0x4
-.incbin "base.gba", 0x8F864, 0x4
-.incbin "base.gba", 0x8F868, 0x4
-.incbin "base.gba", 0x8F86C, 0x4
-.incbin "base.gba", 0x8F870, 0x4
-.incbin "base.gba", 0x8F874, 0x4
-.incbin "base.gba", 0x8F878, 0x4
-.incbin "base.gba", 0x8F87C, 0x4
-.incbin "base.gba", 0x8F880, 0x4
-.incbin "base.gba", 0x8F884, 0x4
-.incbin "base.gba", 0x8F888, 0x4
-.incbin "base.gba", 0x8F88C, 0x4
-.incbin "base.gba", 0x8F890, 0x4
-.incbin "base.gba", 0x8F894, 0x4
-.incbin "base.gba", 0x8F898, 0x4
-.incbin "base.gba", 0x8F89C, 0x4
-.incbin "base.gba", 0x8F8A0, 0x4
-.incbin "base.gba", 0x8F8A4, 0x4
-.incbin "base.gba", 0x8F8A8, 0x4
-.incbin "base.gba", 0x8F8AC, 0x4
-.incbin "base.gba", 0x8F8B0, 0x4
-.incbin "base.gba", 0x8F8B4, 0x4
-.incbin "base.gba", 0x8F8B8, 0x4
-.incbin "base.gba", 0x8F8BC, 0x4
-.incbin "base.gba", 0x8F8C0, 0x4
-.incbin "base.gba", 0x8F8C4, 0x4
-.incbin "base.gba", 0x8F8C8, 0x4
-_0808f8cc:
-.incbin "base.gba", 0x8F8CC, 0x4
-.incbin "base.gba", 0x8F8D0, 0x4
-.incbin "base.gba", 0x8F8D4, 0x4
-.incbin "base.gba", 0x8F8D8, 0x4
-.incbin "base.gba", 0x8F8DC, 0x4
-.incbin "base.gba", 0x8F8E0, 0x4
-.incbin "base.gba", 0x8F8E4, 0x4
-.incbin "base.gba", 0x8F8E8, 0x4
-.incbin "base.gba", 0x8F8EC, 0x4
-.incbin "base.gba", 0x8F8F0, 0x4
-.incbin "base.gba", 0x8F8F4, 0x4
-.incbin "base.gba", 0x8F8F8, 0x4
-.incbin "base.gba", 0x8F8FC, 0x4
-.incbin "base.gba", 0x8F900, 0x4
-.incbin "base.gba", 0x8F904, 0x4
-.incbin "base.gba", 0x8F908, 0x4
-.incbin "base.gba", 0x8F90C, 0x4
-.incbin "base.gba", 0x8F910, 0x4
-.incbin "base.gba", 0x8F914, 0x4
-.incbin "base.gba", 0x8F918, 0x4
-.incbin "base.gba", 0x8F91C, 0x4
-.incbin "base.gba", 0x8F920, 0x4
-.incbin "base.gba", 0x8F924, 0x4
-.incbin "base.gba", 0x8F928, 0x4
-.incbin "base.gba", 0x8F92C, 0x4
-.incbin "base.gba", 0x8F930, 0x4
-.incbin "base.gba", 0x8F934, 0x4
-.incbin "base.gba", 0x8F938, 0x4
-.incbin "base.gba", 0x8F93C, 0x4
-.incbin "base.gba", 0x8F940, 0x4
-.incbin "base.gba", 0x8F944, 0x4
-.incbin "base.gba", 0x8F948, 0x4
-.incbin "base.gba", 0x8F94C, 0x4
-.incbin "base.gba", 0x8F950, 0x4
-.incbin "base.gba", 0x8F954, 0x4
-.incbin "base.gba", 0x8F958, 0x4
-.incbin "base.gba", 0x8F95C, 0x4
-.incbin "base.gba", 0x8F960, 0x4
-.incbin "base.gba", 0x8F964, 0x4
-.incbin "base.gba", 0x8F968, 0x4
-.incbin "base.gba", 0x8F96C, 0x4
-.incbin "base.gba", 0x8F970, 0x4
-.incbin "base.gba", 0x8F974, 0x4
-.incbin "base.gba", 0x8F978, 0x4
-.incbin "base.gba", 0x8F97C, 0x4
-_0808f980:
-.incbin "base.gba", 0x8F980, 0x4
-.incbin "base.gba", 0x8F984, 0x4
-.incbin "base.gba", 0x8F988, 0x4
-.incbin "base.gba", 0x8F98C, 0x4
-.incbin "base.gba", 0x8F990, 0x4
-.incbin "base.gba", 0x8F994, 0x4
-.incbin "base.gba", 0x8F998, 0x4
-.incbin "base.gba", 0x8F99C, 0x4
-.incbin "base.gba", 0x8F9A0, 0x4
-.incbin "base.gba", 0x8F9A4, 0x4
-.incbin "base.gba", 0x8F9A8, 0x4
-.incbin "base.gba", 0x8F9AC, 0x4
-.incbin "base.gba", 0x8F9B0, 0x4
-.incbin "base.gba", 0x8F9B4, 0x4
-.incbin "base.gba", 0x8F9B8, 0x4
-.incbin "base.gba", 0x8F9BC, 0x4
-.incbin "base.gba", 0x8F9C0, 0x4
-.incbin "base.gba", 0x8F9C4, 0x4
-.incbin "base.gba", 0x8F9C8, 0x4
-.incbin "base.gba", 0x8F9CC, 0x4
-.incbin "base.gba", 0x8F9D0, 0x4
-.incbin "base.gba", 0x8F9D4, 0x4
-.incbin "base.gba", 0x8F9D8, 0x4
-.incbin "base.gba", 0x8F9DC, 0x4
-.incbin "base.gba", 0x8F9E0, 0x4
-.incbin "base.gba", 0x8F9E4, 0x4
-.incbin "base.gba", 0x8F9E8, 0x4
-.incbin "base.gba", 0x8F9EC, 0x4
-.incbin "base.gba", 0x8F9F0, 0x4
-.incbin "base.gba", 0x8F9F4, 0x4
-.incbin "base.gba", 0x8F9F8, 0x4
-.incbin "base.gba", 0x8F9FC, 0x4
-.incbin "base.gba", 0x8FA00, 0x4
-.incbin "base.gba", 0x8FA04, 0x4
-.incbin "base.gba", 0x8FA08, 0x4
-.incbin "base.gba", 0x8FA0C, 0x4
-.incbin "base.gba", 0x8FA10, 0x4
-.incbin "base.gba", 0x8FA14, 0x4
-.incbin "base.gba", 0x8FA18, 0x4
-.incbin "base.gba", 0x8FA1C, 0x4
-.incbin "base.gba", 0x8FA20, 0x4
-.incbin "base.gba", 0x8FA24, 0x4
+    ands   	r8, r1, #0x3
+    ldmeqia	r11!, { r9, r10 }
+    and    	r5, r7, r9, lsr r8
+    and    	lr, r7, r10, lsr r8
+    rsb    	r5, r5, r5, lsl #0x4
+    and    	r6, r2, r5
+    add    	r6, r6, lr
+    ldr    	lr, [r0, #0x0]
+    bic    	lr, lr, r5, lsl r3
+    orr    	lr, lr, r6, lsl r3
+    str    	lr, [r0, #0x0]
+    ldr    	lr, [r0, #0x20]
+    bic    	lr, lr, r5, lsr r4
+    orr    	lr, lr, r6, lsr r4
+    str    	lr, [r0, #0x20]
+    add    	r0, r0, #0x4
+    ands   	lr, r0, #0x1f
+    addeq  	r0, r0, r12
+    adds   	r1, r1, #0x1
+    bcc    	_0808f854
+    ldmia  	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+    bx     	lr
+	arm_func_end sub_0808f83c
+
+	arm_func_start sub_0808f8ac
+sub_0808f8ac:
+	stmdb	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb  	r4, r3, #0x20
+	ldr  	r7, [sp, #0x2c]
+	ldr  	r11, [sp, #0x28]
+	ldr  	r12, [sp, #0x24]
+	add  	r10, r11, r1, lsl #0x1
+	rsb  	r1, r1, #0x0
+	and  	r8, r1, #0x3
+_0808f8cc:   
+	ldmia 	r11, { r5, r6 }
+	ldr   	r9, [r10, #0x0]
+	and   	r5, r7, r5, lsr r8
+	and   	lr, r7, r6, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	r9, r7, r9, lsr r8
+	mov   	r8, r9, lsl #0x10
+	mov   	r8, r8, lsr #0x10
+	rsb   	r8, r8, r8, lsl #0x4
+	and   	lr, r2, r8
+	add   	r9, lr,r9, lsr #0x10
+	ldr   	lr, [r0,#0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r8, lsl r3
+	orr   	lr, lr, r9, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r8, lsr r4
+	orr   	lr, lr, r9, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	adds  	r1, r1, #0x1
+	andccs	r8, r1, #0x3
+	addeq 	r10, r10, #0x4
+	addeq 	r11, r11, #0x8
+	bcc   	_0808f8cc
+	ldmia 	sp!,{ r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
+	arm_func_end sub_0808f8ac
+
+	arm_func_start sub_0808f960
+	stmdb 	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb   	r4, r3,#0x20
+	ldr   	r7, [sp, #0x2c]
+	ldr   	r11, [sp, #0x28]
+	ldr   	r12, [sp, #0x24]
+	add   	r10, r11, r1, lsl #0x1
+.incbin "base.gba", 0x8f978, 0x4 @ rsb   	r1, r1, #0x0
+	and   	r8, r1, #0x3
+_0808f980:	
+	ldmia 	r11, { r5, r6 }
+	and   	r5, r7, r5, lsr r8
+	and   	lr, r7, r6, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	ldmia 	r10, { r9, lr }
+	and   	r9, r7, r9, lsr r8
+	and   	lr, r7, lr, lsr r8
+	rsb   	r8, r9, r9, lsl #0x4
+	and   	r9, r2, r8
+	add   	r9, r9, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r8, lsl r3
+	orr   	lr, lr, r9, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r8, lsr r4
+	orr   	lr, lr, r9, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	adds  	r1, r1, #0x1
+	andccs	r8, r1, #0x3
+	addeq 	r10, r10, #0x8
+	addeq 	r11, r11, #0x8
+	bcc   	_0808f980
+	ldmia 	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
+	arm_func_end sub_0808fa10
+
+	arm_func_start sub_0808f8ac
+sub_0808fa10:
+	stmdb	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb  	r4, r3, #0x20
+	ldr  	r7, [sp, #0x2c]
+	ldr  	r11, [sp, #0x28]
+	ldr  	r12, [sp, #0x24]
+.incbin "base.gba", 0x8fa24, 0x4 @ rsb  	r1, r1, 0x0
 _0808fa28:
-.incbin "base.gba", 0x8FA28, 0x4
-.incbin "base.gba", 0x8FA2C, 0x4
-.incbin "base.gba", 0x8FA30, 0x4
-.incbin "base.gba", 0x8FA34, 0x4
-.incbin "base.gba", 0x8FA38, 0x4
-.incbin "base.gba", 0x8FA3C, 0x4
-.incbin "base.gba", 0x8FA40, 0x4
-.incbin "base.gba", 0x8FA44, 0x4
-.incbin "base.gba", 0x8FA48, 0x4
-.incbin "base.gba", 0x8FA4C, 0x4
-.incbin "base.gba", 0x8FA50, 0x4
-.incbin "base.gba", 0x8FA54, 0x4
-.incbin "base.gba", 0x8FA58, 0x4
-.incbin "base.gba", 0x8FA5C, 0x4
-.incbin "base.gba", 0x8FA60, 0x4
-.incbin "base.gba", 0x8FA64, 0x4
-.incbin "base.gba", 0x8FA68, 0x4
-.incbin "base.gba", 0x8FA6C, 0x4
-.incbin "base.gba", 0x8FA70, 0x4
-.incbin "base.gba", 0x8FA74, 0x4
-.incbin "base.gba", 0x8FA78, 0x4
-.incbin "base.gba", 0x8FA7C, 0x4
-.incbin "base.gba", 0x8FA80, 0x4
-.incbin "base.gba", 0x8FA84, 0x4
-.incbin "base.gba", 0x8FA88, 0x4
-.incbin "base.gba", 0x8FA8C, 0x4
-.incbin "base.gba", 0x8FA90, 0x4
-.incbin "base.gba", 0x8FA94, 0x4
-.incbin "base.gba", 0x8FA98, 0x4
-.incbin "base.gba", 0x8FA9C, 0x4
-.incbin "base.gba", 0x8FAA0, 0x4
-.incbin "base.gba", 0x8FAA4, 0x4
-.incbin "base.gba", 0x8FAA8, 0x4
-.incbin "base.gba", 0x8FAAC, 0x4
-.incbin "base.gba", 0x8FAB0, 0x4
-.incbin "base.gba", 0x8FAB4, 0x4
-.incbin "base.gba", 0x8FAB8, 0x4
-.incbin "base.gba", 0x8FABC, 0x4
-.incbin "base.gba", 0x8FAC0, 0x4
-.incbin "base.gba", 0x8FAC4, 0x4
-.incbin "base.gba", 0x8FAC8, 0x4
+	ands   	r8, r1, #0x3
+	ldmeqia	r11!, { r9, r10 }
+	and    	r5, r7, r9, lsr r8
+	and    	lr, r7, r10, lsr r8
+	rsb    	r5, r5, r5, lsl #0x4
+	and    	r6, r2, r5
+	add    	r6, r6, lr
+	ldr    	lr, [r0, #0x0]
+	bic    	lr, lr, r5, lsl r3
+	orr    	lr, lr, r6, lsl r3
+	str    	lr, [r0, #0x0]
+	ldr    	lr, [r0, #0x20]
+	bic    	lr, lr, r5, lsr r4
+	orr    	lr, lr, r6, lsr r4
+	str    	lr, [r0, #0x20]
+	add    	r0, r0, #0x4
+	ands   	lr, r0, #0x1f
+	addeq  	r0, r0, r12
+	ldr    	lr, [r0, #0x0]
+	bic    	lr, lr, r5, lsl r3
+	orr    	lr, lr, r6, lsl r3
+	str    	lr, [r0, #0x0]
+	ldr    	lr, [r0, #0x20]
+	bic    	lr, lr, r5, lsr r4
+	orr    	lr, lr, r6, lsr r4
+	str    	lr, [r0, #0x20]
+	add    	r0, r0, #0x4
+	ands   	lr, r0, #0x1f
+	addeq  	r0, r0, r12
+	adds   	r1, r1, #0x1
+	bcc    	_0808fa28
+	ldmia  	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx     	lr
+	arm_func_end sub_0808f8ac
+
+	arm_func_start sub_0808faac
+sub_0808faac:
+	stmdb	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb  	r4, r3, #0x20
+	ldr  	r7, [sp, #0x2c]
+	ldr  	r11, [sp, #0x28]
+	ldr  	r12, [sp, #0x24]
+	add  	r10, r11, r1, lsl #0x1
+	rsb  	r1, r1, #0x0
+	and  	r8, r1, #0x3
 _0808facc:
-.incbin "base.gba", 0x8FACC, 0x4
-.incbin "base.gba", 0x8FAD0, 0x4
-.incbin "base.gba", 0x8FAD4, 0x4
-.incbin "base.gba", 0x8FAD8, 0x4
-.incbin "base.gba", 0x8FADC, 0x4
-.incbin "base.gba", 0x8FAE0, 0x4
-.incbin "base.gba", 0x8FAE4, 0x4
-.incbin "base.gba", 0x8FAE8, 0x4
-.incbin "base.gba", 0x8FAEC, 0x4
-.incbin "base.gba", 0x8FAF0, 0x4
-.incbin "base.gba", 0x8FAF4, 0x4
-.incbin "base.gba", 0x8FAF8, 0x4
-.incbin "base.gba", 0x8FAFC, 0x4
-.incbin "base.gba", 0x8FB00, 0x4
-.incbin "base.gba", 0x8FB04, 0x4
-.incbin "base.gba", 0x8FB08, 0x4
-.incbin "base.gba", 0x8FB0C, 0x4
-.incbin "base.gba", 0x8FB10, 0x4
-.incbin "base.gba", 0x8FB14, 0x4
-.incbin "base.gba", 0x8FB18, 0x4
-.incbin "base.gba", 0x8FB1C, 0x4
-.incbin "base.gba", 0x8FB20, 0x4
-.incbin "base.gba", 0x8FB24, 0x4
-.incbin "base.gba", 0x8FB28, 0x4
-.incbin "base.gba", 0x8FB2C, 0x4
-.incbin "base.gba", 0x8FB30, 0x4
-.incbin "base.gba", 0x8FB34, 0x4
-.incbin "base.gba", 0x8FB38, 0x4
-.incbin "base.gba", 0x8FB3C, 0x4
-.incbin "base.gba", 0x8FB40, 0x4
-.incbin "base.gba", 0x8FB44, 0x4
-.incbin "base.gba", 0x8FB48, 0x4
-.incbin "base.gba", 0x8FB4C, 0x4
-.incbin "base.gba", 0x8FB50, 0x4
-.incbin "base.gba", 0x8FB54, 0x4
-.incbin "base.gba", 0x8FB58, 0x4
-.incbin "base.gba", 0x8FB5C, 0x4
-.incbin "base.gba", 0x8FB60, 0x4
-.incbin "base.gba", 0x8FB64, 0x4
-.incbin "base.gba", 0x8FB68, 0x4
-.incbin "base.gba", 0x8FB6C, 0x4
-.incbin "base.gba", 0x8FB70, 0x4
-.incbin "base.gba", 0x8FB74, 0x4
-.incbin "base.gba", 0x8FB78, 0x4
-.incbin "base.gba", 0x8FB7C, 0x4
-.incbin "base.gba", 0x8FB80, 0x4
-.incbin "base.gba", 0x8FB84, 0x4
-.incbin "base.gba", 0x8FB88, 0x4
-.incbin "base.gba", 0x8FB8C, 0x4
-.incbin "base.gba", 0x8FB90, 0x4
-.incbin "base.gba", 0x8FB94, 0x4
-.incbin "base.gba", 0x8FB98, 0x4
-.incbin "base.gba", 0x8FB9C, 0x4
-.incbin "base.gba", 0x8FBA0, 0x4
-.incbin "base.gba", 0x8FBA4, 0x4
-.incbin "base.gba", 0x8FBA8, 0x4
-.incbin "base.gba", 0x8FBAC, 0x4
-.incbin "base.gba", 0x8FBB0, 0x4
-.incbin "base.gba", 0x8FBB4, 0x4
-.incbin "base.gba", 0x8FBB8, 0x4
-.incbin "base.gba", 0x8FBBC, 0x4
-.incbin "base.gba", 0x8FBC0, 0x4
+	ldmia 	r11, { r5, r6 }
+	ldr   	r9, [r10, #0x0]
+	and   	r5, r7, r5, lsr r8
+	and   	lr, r7, r6, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	r9, r7, r9, lsr r8
+	mov   	r8, r9, lsl #0x10
+	mov   	r8, r8, lsr #0x10
+	rsb   	r8, r8, r8, lsl #0x4
+	and   	lr, r2, r8
+	add   	r9, lr, r9, lsr #0x10
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r8, lsl r3
+	orr   	lr, lr, r9, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r8, lsr r4
+	orr   	lr, lr, r9, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r8, lsl r3
+	orr   	lr, lr, r9, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r8, lsr r4
+	orr   	lr, lr, r9, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	adds  	r1, r1, #0x1
+	andccs	r8, r1, #0x3
+	addeq 	r10, r10, #0x4
+	addeq 	r11, r11, #0x8
+	bcc   	_0808facc
+	ldmia 	sp!,{ r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
+	arm_func_end sub_0808faac
+
+	arm_func_start sub_0808fba4
+sub_0808fba4:
+	stmdb	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb  	r4, r3,#0x20
+	ldr  	r7, [sp, #0x2c]
+	ldr  	r11, [sp, #0x28]
+	ldr  	r12, [sp, #0x24]
+	add  	r10, r11, r1, lsl #0x1
+	rsb  	r1, r1, #0x0
+	and  	r8, r1, #0x3
 _0808fbc4:
-.incbin "base.gba", 0x8FBC4, 0x4
-.incbin "base.gba", 0x8FBC8, 0x4
-.incbin "base.gba", 0x8FBCC, 0x4
-.incbin "base.gba", 0x8FBD0, 0x4
-.incbin "base.gba", 0x8FBD4, 0x4
-.incbin "base.gba", 0x8FBD8, 0x4
-.incbin "base.gba", 0x8FBDC, 0x4
-.incbin "base.gba", 0x8FBE0, 0x4
-.incbin "base.gba", 0x8FBE4, 0x4
-.incbin "base.gba", 0x8FBE8, 0x4
-.incbin "base.gba", 0x8FBEC, 0x4
-.incbin "base.gba", 0x8FBF0, 0x4
-.incbin "base.gba", 0x8FBF4, 0x4
-.incbin "base.gba", 0x8FBF8, 0x4
-.incbin "base.gba", 0x8FBFC, 0x4
-.incbin "base.gba", 0x8FC00, 0x4
-.incbin "base.gba", 0x8FC04, 0x4
-.incbin "base.gba", 0x8FC08, 0x4
-.incbin "base.gba", 0x8FC0C, 0x4
-.incbin "base.gba", 0x8FC10, 0x4
-.incbin "base.gba", 0x8FC14, 0x4
-.incbin "base.gba", 0x8FC18, 0x4
-.incbin "base.gba", 0x8FC1C, 0x4
-.incbin "base.gba", 0x8FC20, 0x4
-.incbin "base.gba", 0x8FC24, 0x4
-.incbin "base.gba", 0x8FC28, 0x4
-.incbin "base.gba", 0x8FC2C, 0x4
-.incbin "base.gba", 0x8FC30, 0x4
-.incbin "base.gba", 0x8FC34, 0x4
-.incbin "base.gba", 0x8FC38, 0x4
-.incbin "base.gba", 0x8FC3C, 0x4
-.incbin "base.gba", 0x8FC40, 0x4
-.incbin "base.gba", 0x8FC44, 0x4
-.incbin "base.gba", 0x8FC48, 0x4
-.incbin "base.gba", 0x8FC4C, 0x4
-.incbin "base.gba", 0x8FC50, 0x4
-.incbin "base.gba", 0x8FC54, 0x4
-.incbin "base.gba", 0x8FC58, 0x4
-.incbin "base.gba", 0x8FC5C, 0x4
-.incbin "base.gba", 0x8FC60, 0x4
-.incbin "base.gba", 0x8FC64, 0x4
-.incbin "base.gba", 0x8FC68, 0x4
-.incbin "base.gba", 0x8FC6C, 0x4
-.incbin "base.gba", 0x8FC70, 0x4
-.incbin "base.gba", 0x8FC74, 0x4
-.incbin "base.gba", 0x8FC78, 0x4
-.incbin "base.gba", 0x8FC7C, 0x4
-.incbin "base.gba", 0x8FC80, 0x4
-.incbin "base.gba", 0x8FC84, 0x4
-.incbin "base.gba", 0x8FC88, 0x4
-.incbin "base.gba", 0x8FC8C, 0x4
-.incbin "base.gba", 0x8FC90, 0x4
-.incbin "base.gba", 0x8FC94, 0x4
-.incbin "base.gba", 0x8FC98, 0x4
-.incbin "base.gba", 0x8FC9C, 0x4
-.incbin "base.gba", 0x8FCA0, 0x4
+	ldmia 	r11, { r5, r6 }
+	and   	r5, r7, r5, lsr r8
+	and   	lr, r7, r6, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	ldmia 	r10, { r9, lr }
+	and   	r9, r7, r9, lsr r8
+	and   	lr, r7, lr, lsr r8
+	rsb   	r8, r9, r9, lsl #0x4
+	and   	r9, r2, r8
+	add   	r9, r9, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r8, lsl r3
+	orr   	lr, lr, r9, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r8, lsr r4
+	orr   	lr, lr, r9, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r8, lsl r3
+	orr   	lr, lr, r9, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r8, lsr r4
+	orr   	lr, lr, r9, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	adds  	r1, r1, #0x1
+	andccs	r8, r1, #0x3
+	addeq 	r10, r10, #0x8
+	addeq 	r11, r11, #0x8
+	bcc   	_0808fbc4
+	ldmia 	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
+	arm_func_end sub_0808fba4
+
+	arm_func_start sub_0808fc98
+sub_0808fc98:
+	stmdb	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb  	r4, r3, #0x20
+	rsb  	r1, r1, #0x0
 _0808fca4:
-.incbin "base.gba", 0x8FCA4, 0x4
-.incbin "base.gba", 0x8FCA8, 0x4
-.incbin "base.gba", 0x8FCAC, 0x4
-.incbin "base.gba", 0x8FCB0, 0x4
-.incbin "base.gba", 0x8FCB4, 0x4
-.incbin "base.gba", 0x8FCB8, 0x4
-.incbin "base.gba", 0x8FCBC, 0x4
-.incbin "base.gba", 0x8FCC0, 0x4
-.incbin "base.gba", 0x8FCC4, 0x4
-.incbin "base.gba", 0x8FCC8, 0x4
-.incbin "base.gba", 0x8FCCC, 0x4
-.incbin "base.gba", 0x8FCD0, 0x4
-.incbin "base.gba", 0x8FCD4, 0x4
-.incbin "base.gba", 0x8FCD8, 0x4
-.incbin "base.gba", 0x8FCDC, 0x4
-.incbin "base.gba", 0x8FCE0, 0x4
-.incbin "base.gba", 0x8FCE4, 0x4
-.incbin "base.gba", 0x8FCE8, 0x4
-.incbin "base.gba", 0x8FCEC, 0x4
-.incbin "base.gba", 0x8FCF0, 0x4
-.incbin "base.gba", 0x8FCF4, 0x4
-.incbin "base.gba", 0x8FCF8, 0x4
-.incbin "base.gba", 0x8FCFC, 0x4
-.incbin "base.gba", 0x8FD00, 0x4
-.incbin "base.gba", 0x8FD04, 0x4
-.incbin "base.gba", 0x8FD08, 0x4
-.incbin "base.gba", 0x8FD0C, 0x4
-.incbin "base.gba", 0x8FD10, 0x4
-.incbin "base.gba", 0x8FD14, 0x4
-.incbin "base.gba", 0x8FD18, 0x4
-.incbin "base.gba", 0x8FD1C, 0x4
-.incbin "base.gba", 0x8FD20, 0x4
-.incbin "base.gba", 0x8FD24, 0x4
-.incbin "base.gba", 0x8FD28, 0x4
-.incbin "base.gba", 0x8FD2C, 0x4
-.incbin "base.gba", 0x8FD30, 0x4
-.incbin "base.gba", 0x8FD34, 0x4
-.incbin "base.gba", 0x8FD38, 0x4
+	ands 	r8, r1, #0x3
+	bleq 	sub_0809035c
+	ldr  	r7, [sp, #0x2c]
+	and  	r5, r7, r9, lsr r8
+	and  	lr, r7, r10, lsr r8
+	rsb  	r5, r5, r5, lsl #0x4
+	and  	r6, r2, r5
+	add  	r6, r6, lr
+	and  	lr, r7, r12, lsr r8
+	and  	r7, r7, r11, lsr r8
+	rsb  	r7, r7, r7, lsl #0x4
+	and  	r8, r2, r7
+	add  	r8, r8, lr
+	ldr  	lr, [r0, #0x0]
+	bic  	lr, lr, r5, lsl r3
+	orr  	lr, lr, r6, lsl r3
+	str  	lr, [r0, #0x0]
+	ldr  	lr, [r0, #0x20]
+	bic  	lr, lr, r5, lsr r4
+	orr  	lr, lr, r6, lsr r4
+	bic  	lr, lr, r7, lsl r3
+	orr  	lr, lr, r8, lsl r3
+	str  	lr, [r0, #0x20]
+	ldr  	lr, [r0, #0x40]
+	bic  	lr, lr, r7, lsr r4
+	orr  	lr, lr, r8, lsr r4
+	str  	lr, [r0, #0x40]
+	add  	r0, r0, #0x4
+	ands 	lr, r0, #0x1f
+	ldreq	lr, [sp, #0x24]
+	addeq	r0, r0, lr
+	adds 	r1, r1, #0x1
+	bcc  	_0808fca4
+	ldmia	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx   	lr
+	arm_func_end sub_0808fc98
+
+	arm_func_start sub_0808fd30
+sub_0808fd30:
+	stmdb 	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb   	r4, r3, #0x20
+	rsb   	r1, r1, #0x0
 _0808fd3c:
-.incbin "base.gba", 0x8FD3C, 0x4
-.incbin "base.gba", 0x8FD40, 0x4
-.incbin "base.gba", 0x8FD44, 0x4
-.incbin "base.gba", 0x8FD48, 0x4
-.incbin "base.gba", 0x8FD4C, 0x4
-.incbin "base.gba", 0x8FD50, 0x4
-.incbin "base.gba", 0x8FD54, 0x4
-.incbin "base.gba", 0x8FD58, 0x4
-.incbin "base.gba", 0x8FD5C, 0x4
-.incbin "base.gba", 0x8FD60, 0x4
-.incbin "base.gba", 0x8FD64, 0x4
-.incbin "base.gba", 0x8FD68, 0x4
-.incbin "base.gba", 0x8FD6C, 0x4
-.incbin "base.gba", 0x8FD70, 0x4
-.incbin "base.gba", 0x8FD74, 0x4
-.incbin "base.gba", 0x8FD78, 0x4
-.incbin "base.gba", 0x8FD7C, 0x4
-.incbin "base.gba", 0x8FD80, 0x4
-.incbin "base.gba", 0x8FD84, 0x4
-.incbin "base.gba", 0x8FD88, 0x4
-.incbin "base.gba", 0x8FD8C, 0x4
-.incbin "base.gba", 0x8FD90, 0x4
-.incbin "base.gba", 0x8FD94, 0x4
-.incbin "base.gba", 0x8FD98, 0x4
-.incbin "base.gba", 0x8FD9C, 0x4
-.incbin "base.gba", 0x8FDA0, 0x4
-.incbin "base.gba", 0x8FDA4, 0x4
-.incbin "base.gba", 0x8FDA8, 0x4
-.incbin "base.gba", 0x8FDAC, 0x4
-.incbin "base.gba", 0x8FDB0, 0x4
-.incbin "base.gba", 0x8FDB4, 0x4
-.incbin "base.gba", 0x8FDB8, 0x4
-.incbin "base.gba", 0x8FDBC, 0x4
-.incbin "base.gba", 0x8FDC0, 0x4
-.incbin "base.gba", 0x8FDC4, 0x4
-.incbin "base.gba", 0x8FDC8, 0x4
-.incbin "base.gba", 0x8FDCC, 0x4
-.incbin "base.gba", 0x8FDD0, 0x4
-.incbin "base.gba", 0x8FDD4, 0x4
-.incbin "base.gba", 0x8FDD8, 0x4
-.incbin "base.gba", 0x8FDDC, 0x4
-.incbin "base.gba", 0x8FDE0, 0x4
-.incbin "base.gba", 0x8FDE4, 0x4
-.incbin "base.gba", 0x8FDE8, 0x4
-.incbin "base.gba", 0x8FDEC, 0x4
-.incbin "base.gba", 0x8FDF0, 0x4
-.incbin "base.gba", 0x8FDF4, 0x4
-.incbin "base.gba", 0x8FDF8, 0x4
-.incbin "base.gba", 0x8FDFC, 0x4
-.incbin "base.gba", 0x8FE00, 0x4
-.incbin "base.gba", 0x8FE04, 0x4
-.incbin "base.gba", 0x8FE08, 0x4
-.incbin "base.gba", 0x8FE0C, 0x4
-_0808fe10:
-.incbin "base.gba", 0x8FE10, 0x4
-.incbin "base.gba", 0x8FE14, 0x4
-.incbin "base.gba", 0x8FE18, 0x4
+	ands  	r8, r1, #0x3
+	bleq  	sub_0809035c
+	ldr   	r7, [sp, #0x2c]
+	and   	r5, r7, r9, lsr r8
+	and   	lr, r7, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	lr, r7, r12, lsr r8
+	and   	r7, r7, r11, lsr r8
+	rsb   	r7, r7, r7, lsl #0x4
+	and   	r8, r2, r7
+	add   	r8, r8, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x24]
+	addeq 	r0, r0, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x24]
+	addeq 	r0, r0, lr
+	adds  	r1, r1, #0x1
+	bcc   	_0808fd3c
+	ldmia 	sp!, { r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
+_0808fe10: 
+	rsb   	r1, r1, #0x0
+	stmdb 	sp!, { r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb   	r4, r3, #0x20
 _0808fe1c:
-.incbin "base.gba", 0x8FE1C, 0x4
-.incbin "base.gba", 0x8FE20, 0x4
-.incbin "base.gba", 0x8FE24, 0x4
-.incbin "base.gba", 0x8FE28, 0x4
-.incbin "base.gba", 0x8FE2C, 0x4
-.incbin "base.gba", 0x8FE30, 0x4
-.incbin "base.gba", 0x8FE34, 0x4
-.incbin "base.gba", 0x8FE38, 0x4
-.incbin "base.gba", 0x8FE3C, 0x4
-.incbin "base.gba", 0x8FE40, 0x4
-.incbin "base.gba", 0x8FE44, 0x4
-.incbin "base.gba", 0x8FE48, 0x4
-.incbin "base.gba", 0x8FE4C, 0x4
-.incbin "base.gba", 0x8FE50, 0x4
-.incbin "base.gba", 0x8FE54, 0x4
-.incbin "base.gba", 0x8FE58, 0x4
-.incbin "base.gba", 0x8FE5C, 0x4
-.incbin "base.gba", 0x8FE60, 0x4
-.incbin "base.gba", 0x8FE64, 0x4
-.incbin "base.gba", 0x8FE68, 0x4
-.incbin "base.gba", 0x8FE6C, 0x4
-.incbin "base.gba", 0x8FE70, 0x4
-.incbin "base.gba", 0x8FE74, 0x4
-.incbin "base.gba", 0x8FE78, 0x4
-.incbin "base.gba", 0x8FE7C, 0x4
-.incbin "base.gba", 0x8FE80, 0x4
-.incbin "base.gba", 0x8FE84, 0x4
-.incbin "base.gba", 0x8FE88, 0x4
-.incbin "base.gba", 0x8FE8C, 0x4
-.incbin "base.gba", 0x8FE90, 0x4
-.incbin "base.gba", 0x8FE94, 0x4
-.incbin "base.gba", 0x8FE98, 0x4
-.incbin "base.gba", 0x8FE9C, 0x4
-.incbin "base.gba", 0x8FEA0, 0x4
-.incbin "base.gba", 0x8FEA4, 0x4
-.incbin "base.gba", 0x8FEA8, 0x4
-.incbin "base.gba", 0x8FEAC, 0x4
-.incbin "base.gba", 0x8FEB0, 0x4
+	ands  	r8, r1, #0x3
+	bleq  	sub_080903f0
+	ldr   	r7, [sp, #0x34]
+	and   	r5, r7, r9, lsr r8
+	and   	lr, r7, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	lr, r7, r12, lsr r8
+	and   	r7, r7, r11, lsr r8
+	rsb   	r7, r7, r7, lsl #0x4
+	and   	r8, r2, r7
+	add   	r8, r8, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	adds  	r1, r1, #0x1
+	bcc   	_0808fe1c
+	ldr   	r0, [sp, #0x0]
+	add   	r0, r0, #0x40
+	ldr   	r1, [sp, #0x4]
+	ldr   	r11, [sp, #0x34]
+	ldr     r12, [sp, #0x2c]
 _0808feb4:
-.incbin "base.gba", 0x8FEB4, 0x4
-.incbin "base.gba", 0x8FEB8, 0x4
-.incbin "base.gba", 0x8FEBC, 0x4
-.incbin "base.gba", 0x8FEC0, 0x4
-.incbin "base.gba", 0x8FEC4, 0x4
-.incbin "base.gba", 0x8FEC8, 0x4
-.incbin "base.gba", 0x8FECC, 0x4
-.incbin "base.gba", 0x8FED0, 0x4
-.incbin "base.gba", 0x8FED4, 0x4
-.incbin "base.gba", 0x8FED8, 0x4
-.incbin "base.gba", 0x8FEDC, 0x4
-.incbin "base.gba", 0x8FEE0, 0x4
-.incbin "base.gba", 0x8FEE4, 0x4
-.incbin "base.gba", 0x8FEE8, 0x4
-.incbin "base.gba", 0x8FEEC, 0x4
-.incbin "base.gba", 0x8FEF0, 0x4
-.incbin "base.gba", 0x8FEF4, 0x4
-.incbin "base.gba", 0x8FEF8, 0x4
-.incbin "base.gba", 0x8FEFC, 0x4
-.incbin "base.gba", 0x8FF00, 0x4
-.incbin "base.gba", 0x8FF04, 0x4
-.incbin "base.gba", 0x8FF08, 0x4
+	ands  	r8, r1, #0x3
+	bleq  	sub_08090484
+	and   	r5, r11, r9, lsr r8
+	and   	lr, r11, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	str   	lr, [r0, #0x20]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	addeq 	r0, r0, r12
+	adds  	r1, r1, #0x1
+	bcc   	_0808feb4
+	ldmia 	sp!, {r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
 _0808ff0c:
-.incbin "base.gba", 0x8FF0C, 0x4
-.incbin "base.gba", 0x8FF10, 0x4
-.incbin "base.gba", 0x8FF14, 0x4
+	rsb    	r1, r1, #0x0
+	stmdb  	sp!, { r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb    	r4, r3, #0x20
 _0808ff18:
-.incbin "base.gba", 0x8FF18, 0x4
-.incbin "base.gba", 0x8FF1C, 0x4
-.incbin "base.gba", 0x8FF20, 0x4
-.incbin "base.gba", 0x8FF24, 0x4
-.incbin "base.gba", 0x8FF28, 0x4
-.incbin "base.gba", 0x8FF2C, 0x4
-.incbin "base.gba", 0x8FF30, 0x4
-.incbin "base.gba", 0x8FF34, 0x4
-.incbin "base.gba", 0x8FF38, 0x4
-.incbin "base.gba", 0x8FF3C, 0x4
-.incbin "base.gba", 0x8FF40, 0x4
-.incbin "base.gba", 0x8FF44, 0x4
-.incbin "base.gba", 0x8FF48, 0x4
-.incbin "base.gba", 0x8FF4C, 0x4
-.incbin "base.gba", 0x8FF50, 0x4
-.incbin "base.gba", 0x8FF54, 0x4
-.incbin "base.gba", 0x8FF58, 0x4
-.incbin "base.gba", 0x8FF5C, 0x4
-.incbin "base.gba", 0x8FF60, 0x4
-.incbin "base.gba", 0x8FF64, 0x4
-.incbin "base.gba", 0x8FF68, 0x4
-.incbin "base.gba", 0x8FF6C, 0x4
-.incbin "base.gba", 0x8FF70, 0x4
-.incbin "base.gba", 0x8FF74, 0x4
-.incbin "base.gba", 0x8FF78, 0x4
-.incbin "base.gba", 0x8FF7C, 0x4
-.incbin "base.gba", 0x8FF80, 0x4
-.incbin "base.gba", 0x8FF84, 0x4
-.incbin "base.gba", 0x8FF88, 0x4
-.incbin "base.gba", 0x8FF8C, 0x4
-.incbin "base.gba", 0x8FF90, 0x4
-.incbin "base.gba", 0x8FF94, 0x4
-.incbin "base.gba", 0x8FF98, 0x4
-.incbin "base.gba", 0x8FF9C, 0x4
-.incbin "base.gba", 0x8FFA0, 0x4
-.incbin "base.gba", 0x8FFA4, 0x4
-.incbin "base.gba", 0x8FFA8, 0x4
-.incbin "base.gba", 0x8FFAC, 0x4
-.incbin "base.gba", 0x8FFB0, 0x4
-.incbin "base.gba", 0x8FFB4, 0x4
-.incbin "base.gba", 0x8FFB8, 0x4
-.incbin "base.gba", 0x8FFBC, 0x4
-.incbin "base.gba", 0x8FFC0, 0x4
-.incbin "base.gba", 0x8FFC4, 0x4
-.incbin "base.gba", 0x8FFC8, 0x4
-.incbin "base.gba", 0x8FFCC, 0x4
-.incbin "base.gba", 0x8FFD0, 0x4
-.incbin "base.gba", 0x8FFD4, 0x4
-.incbin "base.gba", 0x8FFD8, 0x4
-.incbin "base.gba", 0x8FFDC, 0x4
-.incbin "base.gba", 0x8FFE0, 0x4
-.incbin "base.gba", 0x8FFE4, 0x4
-.incbin "base.gba", 0x8FFE8, 0x4
-.incbin "base.gba", 0x8FFEC, 0x4
-.incbin "base.gba", 0x8FFF0, 0x4
-.incbin "base.gba", 0x8FFF4, 0x4
+	ands  	r8, r1, #0x3
+	bleq  	sub_080903f0
+	ldr   	r7, [sp, #0x34]
+	and   	r5, r7, r9, lsr r8
+	and   	lr, r7, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	lr, r7, r12, lsr r8
+	and   	r7, r7, r11, lsr r8
+	rsb   	r7, r7, r7, lsl #0x4
+	and   	r8, r2, r7
+	add   	r8, r8, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	adds  	r1, r1, #0x1
+	bcc   	_0808ff18
+	ldr   	r0, [sp, #0x0]
+	add   	r0, r0, #0x40
+	ldr   	r1, [sp, #0x4]
+	ldr   	r11, [sp, #0x34]
+	ldr   	r12, [sp, #0x2c]
 _0808fff8:
-.incbin "base.gba", 0x8FFF8, 0x4
-.incbin "base.gba", 0x8FFFC, 0x4
-.incbin "base.gba", 0x90000, 0x4
-.incbin "base.gba", 0x90004, 0x4
-.incbin "base.gba", 0x90008, 0x4
-.incbin "base.gba", 0x9000C, 0x4
-.incbin "base.gba", 0x90010, 0x4
-.incbin "base.gba", 0x90014, 0x4
-.incbin "base.gba", 0x90018, 0x4
-.incbin "base.gba", 0x9001C, 0x4
-.incbin "base.gba", 0x90020, 0x4
-.incbin "base.gba", 0x90024, 0x4
-.incbin "base.gba", 0x90028, 0x4
-.incbin "base.gba", 0x9002C, 0x4
-.incbin "base.gba", 0x90030, 0x4
-.incbin "base.gba", 0x90034, 0x4
-.incbin "base.gba", 0x90038, 0x4
-.incbin "base.gba", 0x9003C, 0x4
-.incbin "base.gba", 0x90040, 0x4
-.incbin "base.gba", 0x90044, 0x4
-.incbin "base.gba", 0x90048, 0x4
-.incbin "base.gba", 0x9004C, 0x4
-.incbin "base.gba", 0x90050, 0x4
-.incbin "base.gba", 0x90054, 0x4
-.incbin "base.gba", 0x90058, 0x4
-.incbin "base.gba", 0x9005C, 0x4
-.incbin "base.gba", 0x90060, 0x4
-.incbin "base.gba", 0x90064, 0x4
-.incbin "base.gba", 0x90068, 0x4
-.incbin "base.gba", 0x9006C, 0x4
-.incbin "base.gba", 0x90070, 0x4
-.incbin "base.gba", 0x90074, 0x4
-.incbin "base.gba", 0x90078, 0x4
+	ands 	r8, r1, #0x3
+	bleq 	sub_08090484
+	and  	r5, r11, r9, lsr r8
+	and  	lr, r11, r10, lsr r8
+	rsb  	r5, r5, r5, lsl #0x4
+	and  	r6, r2, r5
+	add  	r6, r6, lr
+	ldr  	lr, [r0, #0x0]
+	bic  	lr, lr, r5, lsl r3
+	orr  	lr, lr, r6, lsl r3
+	str  	lr, [r0, #0x0]
+	ldr  	lr, [r0, #0x20]
+	bic  	lr, lr, r5, lsr r4
+	orr  	lr, lr, r6, lsr r4
+	str  	lr, [r0, #0x20]
+	add  	r0, r0, #0x4
+	ands 	lr, r0, #0x1f
+	addeq	r0, r0, r12
+	ldr  	lr, [r0, #0x0]
+	bic  	lr, lr, r5, lsl r3
+	orr  	lr, lr, r6, lsl r3
+	str  	lr, [r0, #0x0]
+	ldr  	lr, [r0, #0x20]
+	bic  	lr, lr, r5, lsr r4
+	orr  	lr, lr, r6, lsr r4
+	str  	lr, [r0, #0x20]
+	add  	r0, r0, #0x4
+	ands 	lr, r0, #0x1f
+	addeq	r0, r0, r12
+	adds 	r1, r1, #0x1
+	bcc  	_0808fff8
+	ldmia	sp!, {r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx   	lr
 _0809007c:
-.incbin "base.gba", 0x9007C, 0x4
-.incbin "base.gba", 0x90080, 0x4
-.incbin "base.gba", 0x90084, 0x4
+	rsb   	r1, r1, #0x0
+	stmdb 	sp!, { r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb   	r4, r3, #0x20
 _08090088:
-.incbin "base.gba", 0x90088, 0x4
-.incbin "base.gba", 0x9008C, 0x4
-.incbin "base.gba", 0x90090, 0x4
-.incbin "base.gba", 0x90094, 0x4
-.incbin "base.gba", 0x90098, 0x4
-.incbin "base.gba", 0x9009C, 0x4
-.incbin "base.gba", 0x900A0, 0x4
-.incbin "base.gba", 0x900A4, 0x4
-.incbin "base.gba", 0x900A8, 0x4
-.incbin "base.gba", 0x900AC, 0x4
-.incbin "base.gba", 0x900B0, 0x4
-.incbin "base.gba", 0x900B4, 0x4
-.incbin "base.gba", 0x900B8, 0x4
-.incbin "base.gba", 0x900BC, 0x4
-.incbin "base.gba", 0x900C0, 0x4
-.incbin "base.gba", 0x900C4, 0x4
-.incbin "base.gba", 0x900C8, 0x4
-.incbin "base.gba", 0x900CC, 0x4
-.incbin "base.gba", 0x900D0, 0x4
-.incbin "base.gba", 0x900D4, 0x4
-.incbin "base.gba", 0x900D8, 0x4
-.incbin "base.gba", 0x900DC, 0x4
-.incbin "base.gba", 0x900E0, 0x4
-.incbin "base.gba", 0x900E4, 0x4
-.incbin "base.gba", 0x900E8, 0x4
-.incbin "base.gba", 0x900EC, 0x4
-.incbin "base.gba", 0x900F0, 0x4
-.incbin "base.gba", 0x900F4, 0x4
-.incbin "base.gba", 0x900F8, 0x4
-.incbin "base.gba", 0x900FC, 0x4
-.incbin "base.gba", 0x90100, 0x4
-.incbin "base.gba", 0x90104, 0x4
-.incbin "base.gba", 0x90108, 0x4
-.incbin "base.gba", 0x9010C, 0x4
-.incbin "base.gba", 0x90110, 0x4
-.incbin "base.gba", 0x90114, 0x4
+	ands 	r8, r1, #0x3
+	bleq 	sub_080903f0
+	ldr  	r7, [sp, #0x34]
+	and  	r5, r7, r9, lsr r8
+	and  	lr, r7, r10, lsr r8
+	rsb  	r5, r5, r5, lsl #0x4
+	and  	r6, r2, r5
+	add  	r6, r6, lr
+	and  	lr, r7, r12, lsr r8
+	and  	r7, r7, r11, lsr r8
+	rsb  	r7, r7, r7, lsl #0x4
+	and  	r8, r2, r7
+	add  	r8, r8, lr
+	ldr  	lr, [r0, #0x0]
+	bic  	lr, lr, r5, lsl r3
+	orr  	lr, lr, r6, lsl r3
+	str  	lr, [r0, #0x0]
+	ldr  	lr, [r0, #0x20]
+	bic  	lr, lr, r5, lsr r4
+	orr  	lr, lr, r6, lsr r4
+	bic  	lr, lr, r7, lsl r3
+	orr  	lr, lr, r8, lsl r3
+	str  	lr, [r0, #0x20]
+	ldr  	lr, [r0, #0x40]
+	bic  	lr, lr, r7, lsr r4
+	orr  	lr, lr, r8, lsr r4
+	str  	lr, [r0, #0x40]
+	add  	r0, r0, #0x4
+	ands 	lr, r0, #0x1f
+	ldreq	lr, [sp, #0x2c]
+	addeq	r0, r0, lr
+	adds 	r1, r1, #0x1
+	bcc  	_08090088
+	ldr  	r0, [sp, #0x0]
+	add  	r0, r0, #0x40
+	ldr  	r1, [sp, #0x4]
 _08090118:
-.incbin "base.gba", 0x90118, 0x4
-.incbin "base.gba", 0x9011C, 0x4
-.incbin "base.gba", 0x90120, 0x4
-.incbin "base.gba", 0x90124, 0x4
-.incbin "base.gba", 0x90128, 0x4
-.incbin "base.gba", 0x9012C, 0x4
-.incbin "base.gba", 0x90130, 0x4
-.incbin "base.gba", 0x90134, 0x4
-.incbin "base.gba", 0x90138, 0x4
-.incbin "base.gba", 0x9013C, 0x4
-.incbin "base.gba", 0x90140, 0x4
-.incbin "base.gba", 0x90144, 0x4
-.incbin "base.gba", 0x90148, 0x4
-.incbin "base.gba", 0x9014C, 0x4
-.incbin "base.gba", 0x90150, 0x4
-.incbin "base.gba", 0x90154, 0x4
-.incbin "base.gba", 0x90158, 0x4
-.incbin "base.gba", 0x9015C, 0x4
-.incbin "base.gba", 0x90160, 0x4
-.incbin "base.gba", 0x90164, 0x4
-.incbin "base.gba", 0x90168, 0x4
-.incbin "base.gba", 0x9016C, 0x4
-.incbin "base.gba", 0x90170, 0x4
-.incbin "base.gba", 0x90174, 0x4
-.incbin "base.gba", 0x90178, 0x4
-.incbin "base.gba", 0x9017C, 0x4
-.incbin "base.gba", 0x90180, 0x4
-.incbin "base.gba", 0x90184, 0x4
-.incbin "base.gba", 0x90188, 0x4
-.incbin "base.gba", 0x9018C, 0x4
-.incbin "base.gba", 0x90190, 0x4
-.incbin "base.gba", 0x90194, 0x4
-.incbin "base.gba", 0x90198, 0x4
-.incbin "base.gba", 0x9019C, 0x4
-.incbin "base.gba", 0x901A0, 0x4
+	ands  	r8, r1, #0x3
+	bleq  	sub_080903f0
+	ldr   	r7, [sp, #0x34]
+	and   	r5, r7, r9, lsr r8
+	and   	lr, r7, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	lr, r7, r12, lsr r8
+	and   	r7, r7, r11, lsr r8
+	rsb   	r7, r7, r7, lsl #0x4
+	and   	r8, r2, r7
+	add   	r8, r8, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	adds  	r1, r1, #0x1
+	bcc   	_08090118
+	ldmia 	sp!, {r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
 _080901a4:
-.incbin "base.gba", 0x901A4, 0x4
-.incbin "base.gba", 0x901A8, 0x4
-.incbin "base.gba", 0x901AC, 0x4
+	rsb    	r1, r1, #0x0
+	stmdb  	sp!, { r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	rsb    	r4, r3, #0x20
 _080901b0:
-.incbin "base.gba", 0x901B0, 0x4
-.incbin "base.gba", 0x901B4, 0x4
-.incbin "base.gba", 0x901B8, 0x4
-.incbin "base.gba", 0x901BC, 0x4
-.incbin "base.gba", 0x901C0, 0x4
-.incbin "base.gba", 0x901C4, 0x4
-.incbin "base.gba", 0x901C8, 0x4
-.incbin "base.gba", 0x901CC, 0x4
-.incbin "base.gba", 0x901D0, 0x4
-.incbin "base.gba", 0x901D4, 0x4
-.incbin "base.gba", 0x901D8, 0x4
-.incbin "base.gba", 0x901DC, 0x4
-.incbin "base.gba", 0x901E0, 0x4
-.incbin "base.gba", 0x901E4, 0x4
-.incbin "base.gba", 0x901E8, 0x4
-.incbin "base.gba", 0x901EC, 0x4
-.incbin "base.gba", 0x901F0, 0x4
-.incbin "base.gba", 0x901F4, 0x4
-.incbin "base.gba", 0x901F8, 0x4
-.incbin "base.gba", 0x901FC, 0x4
-.incbin "base.gba", 0x90200, 0x4
-.incbin "base.gba", 0x90204, 0x4
-.incbin "base.gba", 0x90208, 0x4
-.incbin "base.gba", 0x9020C, 0x4
-.incbin "base.gba", 0x90210, 0x4
-.incbin "base.gba", 0x90214, 0x4
-.incbin "base.gba", 0x90218, 0x4
-.incbin "base.gba", 0x9021C, 0x4
-.incbin "base.gba", 0x90220, 0x4
-.incbin "base.gba", 0x90224, 0x4
-.incbin "base.gba", 0x90228, 0x4
-.incbin "base.gba", 0x9022C, 0x4
-.incbin "base.gba", 0x90230, 0x4
-.incbin "base.gba", 0x90234, 0x4
-.incbin "base.gba", 0x90238, 0x4
-.incbin "base.gba", 0x9023C, 0x4
-.incbin "base.gba", 0x90240, 0x4
-.incbin "base.gba", 0x90244, 0x4
-.incbin "base.gba", 0x90248, 0x4
-.incbin "base.gba", 0x9024C, 0x4
-.incbin "base.gba", 0x90250, 0x4
-.incbin "base.gba", 0x90254, 0x4
-.incbin "base.gba", 0x90258, 0x4
-.incbin "base.gba", 0x9025C, 0x4
-.incbin "base.gba", 0x90260, 0x4
-.incbin "base.gba", 0x90264, 0x4
-.incbin "base.gba", 0x90268, 0x4
-.incbin "base.gba", 0x9026C, 0x4
-.incbin "base.gba", 0x90270, 0x4
-.incbin "base.gba", 0x90274, 0x4
-.incbin "base.gba", 0x90278, 0x4
-.incbin "base.gba", 0x9027C, 0x4
-.incbin "base.gba", 0x90280, 0x4
-.incbin "base.gba", 0x90284, 0x4
+	ands  	r8, r1, #0x3
+	bleq  	sub_080903f0
+	ldr   	r7, [sp, #0x34]
+	and   	r5, r7, r9, lsr r8
+	and   	lr, r7, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	lr, r7, r12, lsr r8
+	and   	r7, r7, r11, lsr r8
+	rsb   	r7, r7, r7, lsl #0x4
+	and   	r8, r2, r7
+	add   	r8, r8, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	adds  	r1, r1, #0x1
+	bcc   	_080901b0
+	ldr   	r0, [sp, #0x0]
+	add   	r0, r0, #0x40
+	ldr   	r1, [sp, #0x4]
 _08090288:
-.incbin "base.gba", 0x90288, 0x4
-.incbin "base.gba", 0x9028C, 0x4
-.incbin "base.gba", 0x90290, 0x4
-.incbin "base.gba", 0x90294, 0x4
-.incbin "base.gba", 0x90298, 0x4
-.incbin "base.gba", 0x9029C, 0x4
-.incbin "base.gba", 0x902A0, 0x4
-.incbin "base.gba", 0x902A4, 0x4
-.incbin "base.gba", 0x902A8, 0x4
-.incbin "base.gba", 0x902AC, 0x4
-.incbin "base.gba", 0x902B0, 0x4
-.incbin "base.gba", 0x902B4, 0x4
-.incbin "base.gba", 0x902B8, 0x4
-.incbin "base.gba", 0x902BC, 0x4
-.incbin "base.gba", 0x902C0, 0x4
-.incbin "base.gba", 0x902C4, 0x4
-.incbin "base.gba", 0x902C8, 0x4
-.incbin "base.gba", 0x902CC, 0x4
-.incbin "base.gba", 0x902D0, 0x4
-.incbin "base.gba", 0x902D4, 0x4
-.incbin "base.gba", 0x902D8, 0x4
-.incbin "base.gba", 0x902DC, 0x4
-.incbin "base.gba", 0x902E0, 0x4
-.incbin "base.gba", 0x902E4, 0x4
-.incbin "base.gba", 0x902E8, 0x4
-.incbin "base.gba", 0x902EC, 0x4
-.incbin "base.gba", 0x902F0, 0x4
-.incbin "base.gba", 0x902F4, 0x4
-.incbin "base.gba", 0x902F8, 0x4
-.incbin "base.gba", 0x902FC, 0x4
-.incbin "base.gba", 0x90300, 0x4
-.incbin "base.gba", 0x90304, 0x4
-.incbin "base.gba", 0x90308, 0x4
-.incbin "base.gba", 0x9030C, 0x4
-.incbin "base.gba", 0x90310, 0x4
-.incbin "base.gba", 0x90314, 0x4
-.incbin "base.gba", 0x90318, 0x4
-.incbin "base.gba", 0x9031C, 0x4
-.incbin "base.gba", 0x90320, 0x4
-.incbin "base.gba", 0x90324, 0x4
-.incbin "base.gba", 0x90328, 0x4
-.incbin "base.gba", 0x9032C, 0x4
-.incbin "base.gba", 0x90330, 0x4
-.incbin "base.gba", 0x90334, 0x4
-.incbin "base.gba", 0x90338, 0x4
-.incbin "base.gba", 0x9033C, 0x4
-.incbin "base.gba", 0x90340, 0x4
-.incbin "base.gba", 0x90344, 0x4
-.incbin "base.gba", 0x90348, 0x4
-.incbin "base.gba", 0x9034C, 0x4
-.incbin "base.gba", 0x90350, 0x4
-.incbin "base.gba", 0x90354, 0x4
-.incbin "base.gba", 0x90358, 0x4
-.incbin "base.gba", 0x9035C, 0x4
-.incbin "base.gba", 0x90360, 0x4
-.incbin "base.gba", 0x90364, 0x4
-.incbin "base.gba", 0x90368, 0x4
-.incbin "base.gba", 0x9036C, 0x4
-.incbin "base.gba", 0x90370, 0x4
-.incbin "base.gba", 0x90374, 0x4
-.incbin "base.gba", 0x90378, 0x4
-.incbin "base.gba", 0x9037C, 0x4
-.incbin "base.gba", 0x90380, 0x4
-.incbin "base.gba", 0x90384, 0x4
-.incbin "base.gba", 0x90388, 0x4
-.incbin "base.gba", 0x9038C, 0x4
-.incbin "base.gba", 0x90390, 0x4
-.incbin "base.gba", 0x90394, 0x4
-.incbin "base.gba", 0x90398, 0x4
-.incbin "base.gba", 0x9039C, 0x4
-.incbin "base.gba", 0x903A0, 0x4
-.incbin "base.gba", 0x903A4, 0x4
-.incbin "base.gba", 0x903A8, 0x4
-.incbin "base.gba", 0x903AC, 0x4
-.incbin "base.gba", 0x903B0, 0x4
-.incbin "base.gba", 0x903B4, 0x4
-.incbin "base.gba", 0x903B8, 0x4
-.incbin "base.gba", 0x903BC, 0x4
-.incbin "base.gba", 0x903C0, 0x4
-.incbin "base.gba", 0x903C4, 0x4
-.incbin "base.gba", 0x903C8, 0x4
-.incbin "base.gba", 0x903CC, 0x4
-.incbin "base.gba", 0x903D0, 0x4
-.incbin "base.gba", 0x903D4, 0x4
-.incbin "base.gba", 0x903D8, 0x4
-.incbin "base.gba", 0x903DC, 0x4
-.incbin "base.gba", 0x903E0, 0x4
-.incbin "base.gba", 0x903E4, 0x4
-.incbin "base.gba", 0x903E8, 0x4
-.incbin "base.gba", 0x903EC, 0x4
-.incbin "base.gba", 0x903F0, 0x4
-.incbin "base.gba", 0x903F4, 0x4
-.incbin "base.gba", 0x903F8, 0x4
-.incbin "base.gba", 0x903FC, 0x4
-.incbin "base.gba", 0x90400, 0x4
-.incbin "base.gba", 0x90404, 0x4
-.incbin "base.gba", 0x90408, 0x4
-.incbin "base.gba", 0x9040C, 0x4
-.incbin "base.gba", 0x90410, 0x4
-.incbin "base.gba", 0x90414, 0x4
-.incbin "base.gba", 0x90418, 0x4
-.incbin "base.gba", 0x9041C, 0x4
-.incbin "base.gba", 0x90420, 0x4
-.incbin "base.gba", 0x90424, 0x4
-.incbin "base.gba", 0x90428, 0x4
-.incbin "base.gba", 0x9042C, 0x4
-.incbin "base.gba", 0x90430, 0x4
-.incbin "base.gba", 0x90434, 0x4
-.incbin "base.gba", 0x90438, 0x4
-.incbin "base.gba", 0x9043C, 0x4
-.incbin "base.gba", 0x90440, 0x4
-.incbin "base.gba", 0x90444, 0x4
-.incbin "base.gba", 0x90448, 0x4
-.incbin "base.gba", 0x9044C, 0x4
-.incbin "base.gba", 0x90450, 0x4
-.incbin "base.gba", 0x90454, 0x4
-.incbin "base.gba", 0x90458, 0x4
-.incbin "base.gba", 0x9045C, 0x4
-.incbin "base.gba", 0x90460, 0x4
-.incbin "base.gba", 0x90464, 0x4
-.incbin "base.gba", 0x90468, 0x4
-.incbin "base.gba", 0x9046C, 0x4
-.incbin "base.gba", 0x90470, 0x4
-.incbin "base.gba", 0x90474, 0x4
-.incbin "base.gba", 0x90478, 0x4
-.incbin "base.gba", 0x9047C, 0x4
-.incbin "base.gba", 0x90480, 0x4
-.incbin "base.gba", 0x90484, 0x4
-.incbin "base.gba", 0x90488, 0x4
-.incbin "base.gba", 0x9048C, 0x4
-.incbin "base.gba", 0x90490, 0x4
-.incbin "base.gba", 0x90494, 0x4
-.incbin "base.gba", 0x90498, 0x4
-.incbin "base.gba", 0x9049C, 0x4
-.incbin "base.gba", 0x904A0, 0x4
-.incbin "base.gba", 0x904A4, 0x4
-.incbin "base.gba", 0x904A8, 0x4
-.incbin "base.gba", 0x904AC, 0x4
-.incbin "base.gba", 0x904B0, 0x4
-.incbin "base.gba", 0x904B4, 0x4
-.incbin "base.gba", 0x904B8, 0x4
-.incbin "base.gba", 0x904BC, 0x4
-.incbin "base.gba", 0x904C0, 0x4
-.incbin "base.gba", 0x904C4, 0x4
-.incbin "base.gba", 0x904C8, 0x4
-.incbin "base.gba", 0x904CC, 0x4
-.incbin "base.gba", 0x904D0, 0x4
+	ands  	r8, r1,#0x3
+	bleq  	sub_080903f0
+	ldr   	r7, [sp, #0x34]
+	and   	r5, r7, r9, lsr r8
+	and   	lr, r7, r10, lsr r8
+	rsb   	r5, r5, r5, lsl #0x4
+	and   	r6, r2, r5
+	add   	r6, r6, lr
+	and   	lr, r7, r12, lsr r8
+	and   	r7, r7, r11, lsr r8
+	rsb   	r7, r7, r7, lsl #0x4
+	and   	r8, r2, r7
+	add   	r8, r8, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	ldr   	lr, [r0, #0x0]
+	bic   	lr, lr, r5, lsl r3
+	orr   	lr, lr, r6, lsl r3
+	str   	lr, [r0, #0x0]
+	ldr   	lr, [r0, #0x20]
+	bic   	lr, lr, r5, lsr r4
+	orr   	lr, lr, r6, lsr r4
+	bic   	lr, lr, r7, lsl r3
+	orr   	lr, lr, r8, lsl r3
+	str   	lr, [r0, #0x20]
+	ldr   	lr, [r0, #0x40]
+	bic   	lr, lr, r7, lsr r4
+	orr   	lr, lr, r8, lsr r4
+	str   	lr, [r0, #0x40]
+	add   	r0, r0, #0x4
+	ands  	lr, r0, #0x1f
+	ldreq 	lr, [sp, #0x2c]
+	addeq 	r0, r0, lr
+	adds  	r1, r1, #0x1
+	bcc   	_08090288
+	ldmia 	sp!, {r0, r1, r4, r5, r6, r7, r8, r9, r10, r11, lr }
+	bx    	lr
+	arm_func_end sub_0808fd30
+
+	arm_func_start sub_0809035c
+sub_0809035c:
+	ldr 	r5, [sp, #0x28]
+	ldr   	r6, [r5], #0x4
+	and   	r7, r6, #0xf
+	and   	r8, r6, #0xf0
+	orr   	r7, r7, r8, lsl #0x4
+	and   	r8, r6, #0xf00
+	orr   	r7, r7, r8, lsl #0x8
+	and   	r8, r6, #0xf000
+	orr   	r7, r7, r8, lsl #0xc
+	orr   	r9, r7, r7, lsl #0x4
+	and   	r7, r6, #0xf0000000
+	and   	r8, r6, #0xf000000
+	orr   	r7, r7, r8, lsr #0x4
+	and   	r8, r6, #0xf00000
+	orr   	r7, r7, r8, lsr #0x8
+	and   	r8, r6, #0xf0000
+	orr   	r7, r7, r8, lsr #0xc
+	orr   	r11, r7, r7, lsr #0x4
+	ldr   	r6, [r5], #0x4
+	and   	r7, r6, #0xf
+	and   	r8, r6, #0xf0
+	orr   	r7, r7, r8, lsl #0x4
+	and   	r8, r6, #0xf00
+	orr   	r7, r7, r8, lsl #0x8
+	and   	r8, r6, #0xf000
+	orr   	r7, r7, r8, lsl #0xc
+	orr   	r10, r7, r7, lsl #0x4
+	and   	r7, r6, #0xf0000000
+	and   	r8, r6, #0xf000000
+	orr   	r7, r7, r8, lsr #0x4
+	and   	r8, r6, #0xf00000
+	orr   	r7, r7, r8, lsr #0x8
+	and   	r8, r6, #0xf0000
+	orr   	r7, r7, r8, lsr #0xc
+	orr   	r12,r7, r7, lsr #0x4
+	str   	r5, [sp, #0x28]
+	mov   	pc, lr
+	arm_func_end sub_0809035c
+
+	arm_func_start sub_080903f0
+sub_080903f0:
+	ldr   	r5, [sp, #0x30]
+	ldr   	r6, [r5], #0x4
+	and   	r7, r6, #0xf
+	and   	r8, r6, #0xf0
+	orr   	r7, r7, r8, lsl #0x4
+	and   	r8, r6, #0xf00
+	orr   	r7, r7, r8, lsl #0x8
+	and   	r8, r6, #0xf000
+	orr   	r7, r7, r8, lsl #0xc
+	orr   	r9, r7, r7, lsl #0x4
+	and   	r7, r6, #0xf0000000
+	and   	r8, r6, #0xf000000
+	orr   	r7, r7, r8, lsr #0x4
+	and   	r8, r6, #0xf00000
+	orr   	r7, r7, r8, lsr #0x8
+	and   	r8, r6, #0xf0000
+	orr   	r7, r7, r8, lsr #0xc
+	orr   	r11,r7, r7, lsr #0x4
+	ldr   	r6, [r5], #0x4
+	and   	r7, r6, #0xf
+	and   	r8, r6, #0xf0
+	orr   	r7, r7, r8, lsl #0x4
+	and   	r8, r6, #0xf00
+	orr   	r7, r7, r8, lsl #0x8
+	and   	r8, r6, #0xf000
+	orr   	r7, r7, r8, lsl #0xc
+	orr   	r10 ,r7,r7, lsl #0x4
+	and   	r7, r6, #0xf0000000
+	and   	r8, r6, #0xf000000
+	orr   	r7, r7, r8, lsr #0x4
+	and   	r8, r6, #0xf00000
+	orr   	r7, r7, r8, lsr #0x8
+	and   	r8, r6, #0xf0000
+	orr   	r7, r7, r8, lsr #0xc
+	orr   	r12, r7, r7, lsr #0x4
+	str   	r5, [sp, #0x30]
+	mov   	pc, lr
+	arm_func_end sub_080903f0
+
+	arm_func_start sub_08090484
+sub_08090484:
+	ldr  	r5, [sp,#0x30]
+	ldr  	r6, [r5], #0x4
+	and  	r7, r6, #0xf
+	and  	r8, r6, #0xf0
+	orr  	r7, r7, r8, lsl #0x4
+	and  	r8, r6, #0xf00
+	orr  	r7, r7, r8, lsl #0x8
+	and  	r8, r6, #0xf000
+	orr  	r7, r7, r8, lsl #0xc
+	orr  	r9, r7, r7, lsl #0x4
+	and  	r7, r6, #0xf0000000
+	and  	r8, r6, #0xf000000
+	orr  	r7, r7, r8, lsr #0x4
+	and  	r8, r6, #0xf00000
+	orr  	r7, r7, r8, lsr #0x8
+	and  	r8, r6, #0xf0000
+	orr  	r7, r7, r8, lsr #0xc
+	orr  	r10, r7, r7, lsr #0x4
+	str  	r5, [sp, #0x30]
+	mov  	pc, lr
+	arm_func_end sub_08090484
 
 	thumb_func_start sub_080904d4
 sub_080904d4:
