@@ -1,3 +1,6 @@
+.include "macros.s"
+.include "defines.s"
+
 thumb_func_start _AgbMain
 _AgbMain: @808AB0C
     push    {r4-r7, r14}                               

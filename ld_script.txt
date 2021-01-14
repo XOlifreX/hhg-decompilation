@@ -2,5 +2,19 @@ ENTRY(Init)
 
 SECTIONS {
     . = 0x8000000;
-    .text : { *(.text); }
+    .text :
+    ALIGN(4)
+    {
+	    asm/crt0.o (.text);
+	    src/unk.o (.text);
+	    asm/hhg.o (.text);
+        asm/main.o (.text);
+        asm/hhg2.o (.text);
+    } =0
+
+    /* Discard everything not specifically mentioned above. */
+	/DISCARD/ :
+    {
+        *(*);
+    }
 }

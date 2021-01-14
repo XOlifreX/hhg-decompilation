@@ -3,5 +3,8 @@
 *.sav
 *.o
 *.gba.bak
+*.map
 errors.txt
 asm/output.s
+tools/agbcc
+tools/agbcc/*
